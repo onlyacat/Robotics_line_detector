@@ -1,0 +1,13 @@
+<launch>
+
+<!-- arguments are set via terminal and can have a default value -->
+<arg name="robot_name" default="thymio10" />
+
+<!-- nodes are exectued -->
+    <node pkg="usi_project" name="turtle_detect" type="turtle_detect.py" output="screen">
+    </node>
+
+    <node pkg="usi_project" name="turtle_move" type="turtle_move.py" output="screen">
+    </node>
+
+</launch>
